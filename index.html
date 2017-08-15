@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>MazeSniper</title>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body class="unselectable">
+        <div class="item_position">
+            <ul>
+                <li class="player_position"></li>
+                <li class="weapon1_position"></li>
+                <li class="weapon_position"></li>
+                <li class="weapon_position"></li>
+                <li class="weapon_position"></li>
+                <li class="weapon_position"></li>
+                <li class="weapon_position"></li>
+            </ul>
+        </div>
+        <div id="holder" style="clear:both;" class="holder" >
+            <div id="canvas" width="800" height="600"></div>
+            <div class="index_instruction">
+                <h1>Instruction</h1>
+                <ul>
+                    <h2>Keyboard</h2>
+                    <li>
+                        <div>W</div>
+                        <div>A</div>
+                        <div>S</div>
+                        <div>D</div>
+                        <div>Up</div>
+                        <div>Left</div>
+                        <div>Down</div>
+                        <div>Right</div>
+                        <p>Move</p>
+                    </li>
+                    <li>
+                        <div style="width:100px;">Space</div>
+                        <p>Jump</p>
+                    </li>
+                    <li>
+                        <div>B</div>
+                        <div>M</div>
+                        <p>Open "Bag" or "Map"</p>
+                    </li>
+                    <h2>Mouse</h2>
+                    <li>
+                        <div style="width:100px;">Left-click</div>
+                        <p>Shoot</p>
+                    </li>
+                </ul>
+                <button id="index_go">GO</button>
+            </div>
+            <div id="map_container">
+                <div class="map_close" id="map_close"></div>
+                <div id="map" width="500" height="500"></div>
+            </div>
+            <div class="weapon_bag" id="weapon_bag">
+                <h2>Weapon Bag</h2>
+                <div class="weapon_close" id="weapon_close"></div>
+                <ul id="weapon_list" class="weapon_list">
+                </ul>
+            </div>
+            <div class="tool_list">
+                <ul>
+                    <li class="tool_bag"><img src="image/tool_bag.png" data-toggle="tooltip" data-placement="top" title="Weapon Bag"></li>
+                    <li class="tool_map"><img src="image/tool_map.png"  data-toggle="tooltip" data-placement="top" title="Map"></li>
+                    <li class="tool_mission"><img src="image/tool_mission.png" data-toggle="tooltip" data-placement="top" title="Mission"></li>
+                    <div class="mission_cover" data-toggle="tooltip" data-placement="top" title="You don't have weapon yet!"></div>
+                </ul>
+            </div>
+            <div class="notification_container">
+                <ul class="notification_list">
+                </ul>
+            </div>
+        </div>
+        <div class="missionEntrance"><h1>ENTER THE MISSION?</h1><button id="enterMission">YES</button><button id="leaveMission">NO</button>
+        </div>
+        <div id="player"></div>
+    </body>
+<script language="javascript" type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/bootstrap.min.js"></script>
+<script language="javascript" type="text/javascript" src="js/raphael.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" src="js/raphael.path.methods.js" type="text/javascript" charset="utf-8"></script>
+<script language="javascript" type="text/javascript" src="js/script.js"></script>
+</html>
